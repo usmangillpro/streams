@@ -8,6 +8,7 @@ import {
   DELETE_STREAM,
 } from "./types";
 import streams from "../../apis/streams";
+import history from "../../history";
 
 export const signIn = (userId) => {
   return {
@@ -22,13 +23,15 @@ export const signOut = () => {
   };
 };
 
-export const createStreams = (formValues) => async (dispatch) => {
-  const response = await streams.post("/streams", formValues);
+export const createStreams = (formValues) => async (dispatch, getState) => {
+  const { userId } = getState().auth;
+  const response = await streams.post("/streams", { ...formValues, userId });
 
   dispatch({
     type: CREATE_STREAME,
     payload: response.data,
   });
+  history.push("/");
 };
 
 export const fetchStreams = () => async (dispatch) => {

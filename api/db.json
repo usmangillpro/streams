@@ -1,0 +1,32 @@
+{
+  "streams": [
+    {
+      "title": "Google",
+      "description": "Google is an IT company based in America. It has many services apps. Most of them are free.",
+      "id": 1
+    },
+    {
+      "title": "Microsoft",
+      "description": "Microsoft was founded in early 70s. Microsoft's operating system named windows is widely used software in the world.",
+      "id": 2
+    },
+    {
+      "title": "Widgets",
+      "description": "I created a widget app...",
+      "userId": "116728551329628709472",
+      "id": 3
+    },
+    {
+      "title": "Whatsapp",
+      "description": "I worked in a whatsapp company.",
+      "userId": "116728551329628709472",
+      "id": 4
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "We should'nt see this component anymore, when we click submit.",
+      "userId": "116728551329628709472",
+      "id": 5
+    }
+  ]
+}
