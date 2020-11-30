@@ -47,9 +47,17 @@ export const fetchStream = (id) => async (dispatch) => {
 };
 
 export const editStream = (id, formValues) => async (dispatch) => {
-  const response = await streams.put(`/streams/${id}`, formValues);
+  const response = await streams.patch(`/streams/${id}`, formValues);
+  /* 
+  A axios.put request changes all the data along with the
+  requested data e.g. If we want to change only title, It will 
+  change the title but it will remove other data except "id"...
+  On the other hand axios.patch request only changes the requested data
+  and not the other one
+  */
 
   dispatch({ type: EDIT_STREAM, payload: response.data });
+  history.push("/");
 };
 
 export const deleteStream = (id) => async (dispatch) => {

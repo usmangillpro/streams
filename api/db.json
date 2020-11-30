@@ -23,15 +23,14 @@
       "id": 4
     },
     {
-      "title": "Programmatic Navigation",
-      "description": "We should'nt see this component anymore, when we click submit.",
+      "title": "Programmatic Navigation!",
+      "description": "We should not see this component anymore, when we click submit.",
       "userId": "116728551329628709472",
       "id": 5
     },
     {
-      "title": "GlowLogix",
-      "description": "GlowLogix is an IT based compnay.",
-      "userId": "116728551329628709472",
+      "title": "GlowLogix Inc",
+      "description": "GlowLogix is an IT based company in Pakistan",
       "id": 6
     }
   ]
