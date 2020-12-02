@@ -5,7 +5,8 @@ import GoogleAuth from "./GoogleAuth";
 const Header = () => {
   return (
     <div className="ui secondary pointing menu">
-      <Link to="/" className="item">
+      <Link to="/" className="ui google plus button">
+        <i className="heart icon"></i>
         Streamy
       </Link>
       <div className="right menu">
